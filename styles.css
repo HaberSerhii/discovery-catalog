@@ -1,62 +1,85 @@
 @import url(./template.css);
 
-.product__description.base-padding {
-  padding: 0;
-  border-radius: 0px;
-}
-
 body {
   padding: 0;
 }
 
-.your__class__Container .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+.discovery-catalog img {
+  margin: 0;
+}
+
+.discovery-catalog p {
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  margin: 0;
+}
+
+.discovery-catalog h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.discovery-catalog ul {
+  padding: 0;
+}
+
+.discovery-catalog ul li {
+  padding: 0;
+}
+
+.discovery-catalog {
   overflow: hidden;
 }
 
-.your__class__Container img {
-  margin: 0;
-}
-
-.your__class__Container p {
-  padding: 0;
-  margin: 0;
-}
-
-.your__class__Container h3 {
-  padding: 0;
-  margin: 0;
-}
-
-.your__class__Container ul {
-  padding: 0;
-}
-
-.your__class__Container ul li {
-  padding: 0;
-}
-
-.your__class__Container {
-  overflow: hidden;
-}
-
-.your__class__Container div {
+.discovery-catalog div {
   padding: 0;
   width: initial;
 }
 
-.your__class__Container br {
+.discovery-catalog br {
   display: block;
 }
 
-.product__body .el-tabs__header {
-  z-index: 6;
+.discovery-catalog {
+  border-radius: 10px;
+  padding: 50px;
+}
+.discovery-catalog .discovery-catalog-title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #303437;
+  margin-bottom: 24px;
+}
+.discovery-catalog .discovery-catalog-template {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 16px;
+}
+.discovery-catalog .discovery-catalog-template-item {
+  padding: 16px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+.template-item-title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #303437;
+}
+.template-item-description {
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #888787;
+}
+
+.template-item-checkall {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #303437;
+  margin-top: 14px;
 }
