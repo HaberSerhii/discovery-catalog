@@ -58,6 +58,77 @@ h3 {
   grid-template-rows: repeat(3, 80px);
   gap: 16px;
 }
+
+.discovery-catalog .discovery-catalog-template-item {
+  position: relative;
+  overflow: hidden;
+  background: none;
+}
+
+.discovery-catalog .discovery-catalog-template-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.discovery-catalog .discovery-catalog-template-item > * {
+  position: relative;
+  z-index: 2;
+  color: #303437;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.discovery-catalog .discovery-catalog-template-item:hover::before {
+  opacity: 0.85;
+}
+
+.discovery-catalog .discovery-catalog-template-item:hover > * {
+  opacity: 0.8;
+}
+
+.discovery-catalog .discovery-catalog-template-item:first-child::before {
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Loire-Ivory-05.jpg);
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(2)::before {
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/products/s20106-1.jpg);
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(2):hover > * {
+  opacity: 1;
+  color: white;
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(3)::before {
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/ARDEN-OAK.jpg);
+  background-position: top;
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(3):hover > * {
+  opacity: 1;
+  color: white;
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(4)::before {
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Southwell-Elm-Herringbone-01.jpg);
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(4):hover > * {
+  opacity: 1;
+  color: white;
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(5)::before {
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/products/s20106-1.jpg);
+}
+
 .discovery-catalog .discovery-catalog-template-item {
   padding: 16px;
   border: 1px solid #f1f1f1;
