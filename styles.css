@@ -74,23 +74,19 @@ h3 {
   background-position: center;
   opacity: 0.2;
   z-index: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
 }
 
 .discovery-catalog .discovery-catalog-template-item > * {
   position: relative;
   z-index: 2;
   color: #303437;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
   opacity: 1;
 }
 
 .discovery-catalog .discovery-catalog-template-item:hover::before {
   opacity: 0.85;
-}
-
-.discovery-catalog .discovery-catalog-template-item:hover > * {
-  opacity: 0.8;
 }
 
 .discovery-catalog .discovery-catalog-template-item:first-child::before {
@@ -102,7 +98,6 @@ h3 {
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(2):hover > * {
-  opacity: 1;
   color: white;
 }
 
@@ -112,7 +107,6 @@ h3 {
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(3):hover > * {
-  opacity: 1;
   color: white;
 }
 
@@ -121,12 +115,11 @@ h3 {
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(4):hover > * {
-  opacity: 1;
   color: white;
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(5)::before {
-  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/products/s20106-1.jpg);
+  background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Petra-Ivory-02.jpg);
 }
 
 .discovery-catalog .discovery-catalog-template-item {
