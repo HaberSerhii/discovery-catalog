@@ -1,8 +1,7 @@
 @import url(./fonts.css);
 
 :root {
-  --font-roboto: "Roboto";
-  --font-montserrat: "Montserrat";
+  --font-apercupro: "ApercuPro";
 }
 
 body {
@@ -11,7 +10,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  font-family: var(--font-roboto), var(--font-montserrat), sans-serif;
+  font-family: var(--font-apercupro), sans-serif;
   background: var(
     --Background-Web_Full,
     radial-gradient(
