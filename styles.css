@@ -49,7 +49,7 @@ h3 {
   font-size: 24px;
   line-height: 120%;
   font-weight: 400;
-  color: #303437;
+  color: black;
   margin-bottom: 24px;
 }
 .discovery-catalog .discovery-catalog-template {
@@ -64,6 +64,9 @@ h3 {
   overflow: hidden;
   background: none;
   box-shadow: 0px 1px 1px 0px #30343730;
+  padding: 16px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
 }
 
 .discovery-catalog .discovery-catalog-template-item::before {
@@ -73,39 +76,76 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
-  z-index: 1;
-  transition: opacity 0.7s;
-}
-
-.discovery-catalog .discovery-catalog-template-item > * {
-  position: relative;
-  z-index: 2;
-  color: #303437;
-  transition: opacity 0.7s;
   opacity: 1;
+  z-index: 1;
+  transition: opacity 0.3s;
 }
 
 .discovery-catalog .discovery-catalog-template-item:hover::before {
-  opacity: 0.85;
+  opacity: 0.6;
+}
+
+.discovery-catalog .discovery-catalog-template-item > .template-item-title {
+  position: relative;
+  z-index: 2;
+  color: black;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.discovery-catalog
+  .discovery-catalog-template-item
+  > .template-item-description {
+  position: relative;
+  z-index: 2;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.discovery-catalog
+  .discovery-catalog-template-item:hover
+  > .template-item-description {
+  opacity: 1;
+  color: black;
 }
 
 .discovery-catalog .discovery-catalog-template-item:first-child::before {
   background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Loire-Ivory-05.jpg);
 }
 
+.discovery-catalog
+  .discovery-catalog-template-item:hover:first-child
+  > .template-item-description {
+  color: black;
+  opacity: 1;
+}
+
 .discovery-catalog .discovery-catalog-template-item:nth-child(2)::before {
   background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/K_Fb_Color_12_3_kg_22_PLxUK_b7907098-00b1-4493-83b4-c6f8f6e5c6ca.jpg);
   background-position: right 10% top 40%;
 }
-
+.discovery-catalog .discovery-catalog-template-item:nth-child(2) > * {
+  color: white;
+}
 .discovery-catalog .discovery-catalog-template-item:nth-child(2):hover > * {
   color: white;
+}
+
+.discovery-catalog
+  .discovery-catalog-template-item:hover:nth-child(2)
+  > .template-item-description {
+  color: white;
+  opacity: 1;
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(3)::before {
   background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/ARDEN-OAK.jpg);
   background-position: top;
+}
+
+.discovery-catalog .discovery-catalog-template-item:nth-child(3) > * {
+  color: white;
 }
 
 .discovery-catalog .discovery-catalog-template-item:nth-child(3):hover > * {
@@ -116,6 +156,10 @@ h3 {
   background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Southwell-Elm-Herringbone-01.jpg);
 }
 
+.discovery-catalog .discovery-catalog-template-item:nth-child(4) > * {
+  color: white;
+}
+
 .discovery-catalog .discovery-catalog-template-item:nth-child(4):hover > * {
   color: white;
 }
@@ -124,38 +168,32 @@ h3 {
   background-image: url(https://www.porcelainsuperstore.co.uk/cdn/shop/files/Petra-Ivory-02.jpg);
 }
 
-.discovery-catalog .discovery-catalog-template-item:nth-child(6):hover::before {
-  background-color: #004b91;
-  opacity: 0.75;
-}
-
-.discovery-catalog .discovery-catalog-template-item:nth-child(6):hover > * {
-  opacity: 1;
-  color: white;
-}
-
 .discovery-catalog .discovery-catalog-template-item {
   padding: 16px;
   border: 1px solid #f1f1f1;
   border-radius: 8px;
 }
-.template-item-title {
+.discovery-catalog .template-item-title {
   font-size: 16px;
   line-height: 120%;
   font-weight: 400;
-  color: #303437;
+  color: black;
 }
-.template-item-description {
+.discovery-catalog .template-item-description {
   font-size: 12px;
   line-height: 120%;
   font-weight: 400;
-  color: #888787;
+  color: black;
 }
 
-.template-item-checkall {
+.discovery-catalog .template-item-checkall {
   font-size: 16px;
   line-height: 120%;
   font-weight: 600;
-  color: #303437;
+  color: black;
   margin-top: 14px;
+}
+
+.discovery-catalog-template-item .template-item-checkall:hover {
+  color: white;
 }
